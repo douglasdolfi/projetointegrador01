@@ -1,0 +1,44 @@
+<main>
+    <center><br><img src="https://boladeneve.com/images/logo-menu_0_3_0.png" /><br><br>
+    <h1 class="fs-3">Cadastro de Famílias</center>
+    {{!-- Formulário --}}
+    <div class ="container">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <form action="/cadastrar" method="post">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text"  name="nome" class="form-control" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text"  name="cpf"  class="form-control" placeholder="000.000.000-00" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" maxlength="14" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantidadeMembros">Quantidade de membros</label>
+                        <input type="number"    name="quantidadeMembros"    class="form-control" placeholder="0" max="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <input type="text"      name="endereco"             class="form-control" placeholder="Endereço" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Celular</label>
+                        <input type="tel"   name="telefone" class="form-control" placeholder="00-00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" maxlength="13" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="situacaoMoradia">Situação de moradia</label>
+                        <select name="situacaoMoradia"      class="form-select" required>
+                            <option selected    class="form-control"></option>
+                            <option value="aluguel">Aluguel</option>
+                            <option value="cedida">Cedida</option>
+                            <option value="própria">Própria</option>
+                            <option value="outra">Outra</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>  
+</main>
