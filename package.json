@@ -1,0 +1,30 @@
+{
+  "name": "projetointegrador",
+  "version": "1.0.0",
+  "description": "Projeto Integrador 1 para o curso de Bacharelado em Tecnologia da Informação da UNIVESP",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "node",
+    "express",
+    "express-handlebars",
+    "mysql",
+    "bootstrap"
+  ],
+  "author": "Douglas Dolfi",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
